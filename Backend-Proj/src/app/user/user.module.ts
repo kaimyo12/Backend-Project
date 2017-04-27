@@ -4,6 +4,7 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { ProfileComponent } from './user-profile';
 import { ChangePasswordComponent } from './change-password.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ChangePasswordComponent } from './change-password.component';
   ],
   imports: [
     UserRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: []
